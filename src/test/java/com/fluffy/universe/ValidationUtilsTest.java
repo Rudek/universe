@@ -13,7 +13,7 @@ public class ValidationUtilsTest {
         assertFalse(ValidationUtils.isValidPassword("aF01d_@"), "Password too short, and it return false.");
         assertFalse(ValidationUtils.isValidPassword("aF01d_@flskjlskdldkjflsdllsdkfj"), "Password too long, and it return false");
 
-        assertFalse(ValidationUtils.isValidPassword("aF01dаі?"), "Password doesn't have non letter and non decimal symbol.");
+        assertFalse(ValidationUtils.isValidPassword("aF01af4f"), "Password doesn't have non letter and non decimal symbol.");
 
     }
 }
