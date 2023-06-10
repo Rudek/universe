@@ -33,8 +33,14 @@ jobs:
     - name: Run tests
       run: mvn test
 
-    - name: Super linter
-      uses: github/super-linter@v5
-      env:
-        DEFAULT_BRANCH: master
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#    - name: Super linter
+#      uses: github/super-linter@v5
+#      env:
+#        DEFAULT_BRANCH: master
+#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Spotbug
+      uses: jwgmeligmeyling/spotbugs-github-action@master
+      with:
+        path: '**/spotbugsXml.xml'
+
