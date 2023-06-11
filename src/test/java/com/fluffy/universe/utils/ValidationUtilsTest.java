@@ -1,4 +1,4 @@
-package com.fluffy.universe;
+package com.fluffy.universe.utils;
 
 import com.fluffy.universe.exceptions.HttpException;
 import com.fluffy.universe.utils.ValidationUtils;
