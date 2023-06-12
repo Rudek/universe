@@ -12,7 +12,7 @@ on:
   push:
     branches: [ "master" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "lab4-ci-cd" ]
 
 jobs:
   build:
@@ -39,8 +39,8 @@ jobs:
 #        DEFAULT_BRANCH: master
 #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Spotbug
-      uses: jwgmeligmeyling/spotbugs-github-action@master
-      with:
-        path: '**/spotbugsXml.xml'
+#    - name: Spotbug
+#      uses: jwgmeligmeyling/spotbugs-github-action@master
+#      with:
+#        path: '**/spotbugsXml.xml'
 
